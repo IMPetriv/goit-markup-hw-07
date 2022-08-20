@@ -112,7 +112,7 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	.header-mail:hover .&,
+	.header-mail:hover &,
 	.header-mail:focus & {
 		fill: #2196f3;
 	}
@@ -127,7 +127,7 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	.header-tel:hover .&,
+	.header-tel:hover &,
 	.header-tel:focus & {
 		fill: #2196f3;
 	}
