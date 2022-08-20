@@ -1,10 +1,16 @@
 @import "./base/reset";
+
 @import "./utils/variables";
 @import "./utils/_hidden";
-@import "./components/container";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/footer";
 @import "./layout/modal";
+@import "./layout/team";
+@import "./layout/clients";
 @import "./layout/portfolio";
+
 @import "./components/btn";
+@import "./components/form";
+@import "./components/container";
