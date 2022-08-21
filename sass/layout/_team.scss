@@ -15,11 +15,8 @@
 }
 .hero-team-member {
 	color: var(--primary-title-color);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.18;
+	@include font(16px, 1.18, 500, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 10px;
 }
 .hero-text,
@@ -27,15 +24,12 @@
 	color: var(--primary-text-color);
 }
 .hero-text {
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	@include font(14px, 1.7, null, 0.03em);
 }
+
 .hero-team-text {
-	font-size: 16px;
-	line-height: 1.8;
+	@include font(16px, 1.8, null, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 16px;
 }
 .hero-team-container {
@@ -49,23 +43,17 @@
 	gap: 10px;
 }
 .team-soc-link {
+	@include align-list;
+	justify-content: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 	background-color: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-soc-link:hover,
-.team-soc-link:focus {
-	background-color: #2196f3;
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-	fill: #ffffff;
+	&:hover,
+	&:focus {
+		background-color: #2196f3;
+	}
 }
 
 .team-soc-icon {
@@ -73,4 +61,8 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.team-soc-link:hover &,
+	.team-soc-link:focus & {
+		fill: #ffffff;
+	}
 }

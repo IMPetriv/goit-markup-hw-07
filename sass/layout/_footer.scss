@@ -4,10 +4,7 @@
 }
 .footer-logo {
 	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	letter-spacing: 0.03em;
+	@include font(26px, 1.2, 700, 0.03em);
 }
 
 .footer-logo-box {
@@ -32,17 +29,13 @@
 }
 .footer-location {
 	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	@include font(14px, 1.7, null, 0.03em);
 	color: #ffffff;
 }
 .footer-mail,
 .footer-tel {
 	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	@include font(14px, 1.7, null, 0.03em);
 	color: rgba(255, 255, 255, 0.6);
 }
 
@@ -50,15 +43,13 @@
 	margin-bottom: 20px;
 	display: block;
 	font-style: normal;
-	font-size: 14px;
-	font-weight: 700;
+	@include font(14px, null, 700, null);
 	color: #ffffff;
 }
 
 .footer-soc-link {
-	display: flex;
+	@include align-list;
 	justify-content: center;
-	align-items: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
@@ -67,9 +58,9 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover,
-&:focus {
-	background-color: #2196f3;
-}
+	&:focus {
+		background-color: #2196f3;
+	}
 }
 .footer-soc-icon {
 	fill: #ffffff;
@@ -91,4 +82,3 @@
 .footer-soc {
 	margin-left: 70px;
 }
-
