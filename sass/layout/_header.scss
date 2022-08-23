@@ -12,11 +12,13 @@
 .header-logo-second-part {
 	color: #000000;
 }
-.header-nav {
+.navigation {
 	color: var(--primary-title-color);
 	@include font(14px, 1.14, 500, 0.02em);
-	margin-left: 93px;
 }
+
+.header__navigation {
+	margin-left: 93px;}
 
 .header-nav-list {
 	display: flex;
