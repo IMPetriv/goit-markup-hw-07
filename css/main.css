@@ -221,86 +221,21 @@ h6 {
   padding: 0px 0px;
 }
 
-.advantage__position {
+.advantage__item {
   margin-right: 30px;
   width: 270px;
 }
-.advantage__position:last-child {
+.advantage__item:last-child {
   margin-right: 0px;
 }
-.advantage__position .advantage__title {
+
+.advantage__title {
   color: var(--primary-title-color);
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.advantage__title {
-  margin-bottom: 10px;
-}
-
-.advantage__text {
-  color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-.work__section {
-  padding-top: 0px;
-}
-
-.hero-title {
-  margin-bottom: 50px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.hero-thumb {
-  position: relative;
-}
-
-.hero-item {
-  display: flex;
-  padding-left: 0px;
-}
-
-.hero-item-list {
-  margin-right: 30px;
-}
-
-.hero-item-list:last-child {
-  margin-right: 0px;
-}
-
-.overcard-text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  color: rgb(255, 255, 255);
-  width: 100%;
-  height: 70px;
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: 700;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.hero-title {
-  color: var(--primary-title-color);
-  font-size: 36px;
-  line-height: 1.16;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .advantage__logo {
@@ -315,6 +250,71 @@ img {
 
 .advantage__icon {
   fill: #212121;
+}
+
+.advantage__position {
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.services__section {
+  padding-top: 0px;
+}
+
+.services {
+  color: var(--primary-title-color);
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.services__title {
+  margin-bottom: 50px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.services__thumb {
+  position: relative;
+}
+
+.services__list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.services__item {
+  margin-right: 30px;
+}
+.services__item:last-child {
+  margin-right: 0px;
+}
+
+.services__text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 70px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .footer {
