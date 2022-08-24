@@ -1,25 +1,8 @@
 .section {
 	padding: 94px 0px;
 }
-.work-section {
-	padding-top: 0px;
-}
 
-.hero-list {
-	display: flex;
-	padding: 0px 0px;
-}
-.hero-advantage {
-	margin-right: 30px;
-	width: 270px;
-}
-.hero-advantage:last-child {
-	margin-right: 0px;
-}
-.hero-pre-title {
-	margin-bottom: 10px;
-}
-.hero {
+.bunner {
 	max-width: 1600px;
 	height: 600px;
 	margin-left: auto;
@@ -33,16 +16,89 @@
 	padding-bottom: 200px;
 }
 
-.hero-title {
+.bunner__title {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 696px;
+	@include font(44px, 1.36, 900, 0.06em);
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.advantage__list {
+	display: flex;
+	padding: 0px 0px;
+}
+
+.advantage__item {
+	margin-right: 30px;
+	width: 270px;
+	&:last-child 
+	margin-right: 0px;}
+
+.advantage__title {
+	color: var(--primary-title-color);
+	@include font(14px, 1.14, 700, 0.03em);
+	text-transform: uppercase;
+}
+
+.advantage__logo {
+	@include align-list;
+	justify-content: center;
+	width: 270px;
+	height: 120px;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+}
+.advantage__icon {
+	fill: #212121;
+}
+
+.advantage__position {
+	margin-bottom: 10px;
+}
+
+.advantage__text {	
+	color: var(--primary-text-color);
+	@include font(14px, 1.7, null, 0.03em);
+}
+
+.work__section {
+	padding-top: 0px;
+}
+
+.services {
+	color: var(--primary-title-color);
+	@include font(36px, 1.16, 700, 0.03em);
+	text-align: center;
+}
+
+.services__title {
 	margin-bottom: 50px;
 }
+
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
 }
 
-.overcard-text {
+.services__thumb {
+	position: relative;
+}
+
+.services__list {
+	display: flex;
+	padding-left: 0px;
+}
+.services__item {
+	margin-right: 30px;
+	&:last-child 
+	margin-right: 0px;
+}
+
+.services__text {
 	position: absolute;
 	@include align-list;
 	justify-content: center;
@@ -52,50 +108,4 @@ img {
 	height: 70px;
 	@include font(14px, 1.4, 700, null);
 	background-color: rgba(47, 48, 58, 0.8);
-}
-
-.hero-thumb {
-	position: relative;
-}
-
-.hero-item {
-	display: flex;
-	padding-left: 0px;
-}
-.hero-item-list {
-	margin-right: 30px;
-}
-.hero-item-list:last-child {
-	margin-right: 0px;
-}
-.hero-title-main {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 696px;
-	@include font(44px, 1.36, 900, 0.06em);
-	text-align: center;
-	text-transform: uppercase;
-	color: #ffffff;
-}
-.hero-pre-title {
-	color: var(--primary-title-color);
-	@include font(14px, 1.14, 700, 0.03em);
-	text-transform: uppercase;
-}
-.hero-title {
-	color: var(--primary-title-color);
-	@include font(36px, 1.16, 700, 0.03em);
-	text-align: center;
-}
-
-.advantage-logo {
-	@include align-list;
-	justify-content: center;
-	width: 270px;
-	height: 120px;
-	background-color: #f5f4fa;
-	margin-bottom: 30px;
-}
-.adv-logo-icon {
-	fill: #212121;
 }

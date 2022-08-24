@@ -19,12 +19,9 @@
 	text-align: center;
 	margin-bottom: 10px;
 }
-.hero-text,
+
 .hero-team-text {
 	color: var(--primary-text-color);
-}
-.hero-text {
-	@include font(14px, 1.7, null, 0.03em);
 }
 
 .hero-team-text {

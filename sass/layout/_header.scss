@@ -1,15 +1,15 @@
 .header {
 	border-bottom: 1px solid #ececec;
 }
-.header-logo {
+.logo {
 	font-family: "Raleway", sans-serif;
 	@include font(26px, 1.2, 700, 0.03em);
 }
 
-.header-logo-part {
+.header__logo {
 	color: var(--accent-color);
 }
-.header-logo-second-part {
+.header__logo--part {
 	color: #000000;
 }
 .navigation {
@@ -20,31 +20,31 @@
 .header__navigation {
 	margin-left: 93px;}
 
-.header-nav-list {
+.navigation__list {
 	display: flex;
 }
 
-.item {
+.navigation__item {
 	margin-right: 50px;
 	&:last-child {
 		margin-right: 0px;
 	}
 }
-.main-nav {
+.header__container {
 	@include align-list;
 	padding-top: 24px;
 	padding-bottom: 25px;
 }
-.header-contact {
+.header__connect {
 	display: flex;
 	margin-left: auto;
 }
 
-.header-tel-contact {
+.header__connect--tel {
 	margin-left: 50px;
 }
 
-.header-link {
+.navigation__link {
 	color: var(--primary-title-color);
 	@include font(14px, 1.14, 500, 0.02em);
 	transition-property: color;
@@ -78,8 +78,8 @@
 	}
 }
 
-.header-mail,
-.header-tel {
+.connect__mail,
+.connect__tel {
 	@include align-list;
 	color: var(--primary-text-color);
 	@include font(14px, 1.14, 500, 0.02em);
@@ -93,7 +93,7 @@
 	}
 }
 
-.mail-soc-icon {
+.connect__icon--mail {
 	fill: #757575;
 	width: 16px;
 	height: 12px;
@@ -108,7 +108,7 @@
 	}
 }
 
-.phone-soc-icon {
+.connect__icon--tel {
 	fill: #757575;
 	width: 10px;
 	height: 16px;
