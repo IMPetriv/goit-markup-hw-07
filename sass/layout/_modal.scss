@@ -165,20 +165,20 @@
 	border: 1px solid #212121;
 }
 
-.check-icon {
+.modal__icon-check {
 	fill: transparent;
 }
 
-.modal-check:checked + .policy-text span {
+.modal__check:checked + .policy__text span {
 	background-color: var(--accent-color);
 	border: none;
 }
 
-.modal-check:focus + .policy-text span {
+.modal__check:focus + .policy__text span {
 	border-color: #2196f3;
 }
 
-.modal-check:checked + .policy-text .check-icon {
+.modal__check:checked + .policy__text .check-icon {
 	fill: #ffffff;
 	opacity: 1;
 }
