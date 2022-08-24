@@ -11,26 +11,30 @@
 		height: 50px;
 	}
 	&:hover,
-	&:focus {
-		border-color: var(--accent-color);
-	}
-	&:hover::placeholder,
-	&:focus::placeholder {
-		color: #ffffff;
-	}
+&:focus {
+	border-color: var(--accent-color);
+}
+&:hover::placeholder,
+&:focus::placeholder {
+	color: #ffffff;
+}
 }
 
-.footer-form {
+.footer__form {
 	margin-left: auto;
 }
 
-.online-form {
-	@include align-list;
+.form__online {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
-.footer-form-title {
-	@include font(14px, 1.14, 700, null);
-	color: rgba(255, 255, 255, 1);
+.form__title {
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
 	margin-bottom: 20px;
 }
+

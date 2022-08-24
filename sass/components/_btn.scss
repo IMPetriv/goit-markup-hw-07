@@ -18,8 +18,7 @@
 	}
 }
 
-.modal-button {
-	@include font(16px, 1.87, 700, 0.06em);
+.modal__btn {
 	display: block;
 	box-sizing: border-box;
 	align-items: center;
@@ -33,6 +32,7 @@
 	font-family: inherit;
 	color: #ffffff;
 	background-color: var(--accent-color);
+	@include font(16px, 1.87, 700, 0.06em);
 	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,7 +43,7 @@
 	}
 }
 
-.online-btn {
+.footer__btn {
 	@include align-list;
 	justify-content: center;
 	@include font(16px, 1.87, 700, 0.03em);
@@ -64,26 +64,23 @@
 	}
 }
 
-.btn-icon {
+.btn__icon {
 	fill: #fff;
 	margin-left: 10px;
 }
 
-.portfolio-btn-main {
-	display: flex;
-	margin-bottom: 50px;
-	justify-content: center;
-}
-
-.portfolio-btn {
-	@include font(16px, 1.6, 500, 0.03em);
+.portfolio__btn {
 	border-radius: 4px;
 	border-color: transparent;
 	padding: 6px 22px 6px 22px;
 	font-family: inherit;
 	color: var(--primary-title-color);
 	background-color: #f5f4fa;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
 	text-align: center;
+	letter-spacing: 0.03em;
 	transition-property: background-color, box-shadow, color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,9 +94,3 @@
 	}
 }
 
-.portfolio-btn-list {
-	margin-right: 8px;
-	&:last-child {
-		margin-right: 0px;
-	}
-}
