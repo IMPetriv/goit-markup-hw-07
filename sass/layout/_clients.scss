@@ -1,14 +1,4 @@
-.clients__title {
-	color: var(--primary-title-color);
-	@include font(36px, 1.16, 700, 0.03em);
-	text-align: center;
-}
-
-.clients__place {
-	margin-bottom: 50px;
-}
-
-.clients__list {
+.clients {
 	@include align-list;
 	justify-content: center;
 }

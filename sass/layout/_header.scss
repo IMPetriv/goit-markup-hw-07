@@ -1,17 +1,23 @@
 .header {
 	border-bottom: 1px solid #ececec;
 }
+
+.header__container {
+	@include align-list;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
 .logo {
 	font-family: "Raleway", sans-serif;
 	@include font(26px, 1.2, 700, 0.03em);
-}
-
-.header__logo {
 	color: var(--accent-color);
 }
-.header__logo--part {
+
+.logo__part {
 	color: #000000;
 }
+
 .navigation {
 	color: var(--primary-title-color);
 	@include font(14px, 1.14, 500, 0.02em);
@@ -30,17 +36,13 @@
 		margin-right: 0px;
 	}
 }
-.header__container {
-	@include align-list;
-	padding-top: 24px;
-	padding-bottom: 25px;
-}
+
 .header__connect {
 	display: flex;
 	margin-left: auto;
 }
 
-.header__connect--tel {
+.header__link {
 	margin-left: 50px;
 }
 
@@ -58,7 +60,7 @@
 	}
 }
 
-.current {
+.navigation__link--current {
 	color: var(--accent-color);
 	position: relative;
 	&::after {
@@ -78,8 +80,7 @@
 	}
 }
 
-.connect__mail,
-.connect__tel {
+.header__link {
 	@include align-list;
 	color: var(--primary-text-color);
 	@include font(14px, 1.14, 500, 0.02em);
@@ -93,7 +94,7 @@
 	}
 }
 
-.connect__icon--mail {
+.header__icon {
 	fill: #757575;
 	width: 16px;
 	height: 12px;
@@ -108,17 +109,3 @@
 	}
 }
 
-.connect__icon--tel {
-	fill: #757575;
-	width: 10px;
-	height: 16px;
-	background-color: #ffffff;
-	margin-right: 10px;
-	transition-property: fill;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	.header-tel:hover &,
-	.header-tel:focus & {
-		fill: #2196f3;
-	}
-}
